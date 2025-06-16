@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MusikKu - Artikel Musik Terlengkap</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+    }
+    header {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav {
+      display: flex;
+      gap: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1471478331149-c72f17e33c73?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+      color: white;
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: auto;
+    }
+    .section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .articles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .article-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .article-card h3 {
+      margin-bottom: 0.5rem;
+      color: #1e3c72;
+    }
+    .testimonial {
+      background: #eaf2f8;
+      padding: 2rem;
+      border-left: 5px solid #1e3c72;
+      margin-bottom: 1rem;
+      border-radius: 6px;
+    }
+    .cta {
+      background: #2a5298;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      border-radius: 8px;
+    }
+    .cta input[type="email"] {
+      padding: 0.5rem;
+      border: none;
+      border-radius: 4px;
+      margin-right: 0.5rem;
+      width: 250px;
+    }
+    .cta button {
+      padding: 0.5rem 1rem;
+      border: none;
+      background: #1e3c72;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    footer {
+      background: #1e3c72;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .cta input[type="email"] {
+        width: 100%;
+        margin: 0 0 1rem 0;
+      }
+      .cta button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h2>MusikKu</h2>
+  <nav>
+    <a href="#artikel">Artikel</a>
+    <a href="#testimoni">Testimoni</a>
+    <a href="#subscribe">Langganan</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Temukan Dunia Musik Lebih Dalam</h1>
+  <p>Artikel musik terlengkap: dari sejarah, teori, genre, hingga profil musisi legendaris dan panduan kunci gitar!</p>
+</section>
+
+<section class="section" id="artikel">
+  <h2>Artikel Terbaru</h2>
+  <div class="articles">
+    <div class="article-card">
+      <h3>Mengenal Musik Jazz</h3>
+      <p>Asal usul, ciri khas, dan tokoh penting dalam dunia musik jazz.</p>
+    </div>
+    <div class="article-card">
+      <h3>Kunci Dasar Gitar</h3>
+      <p>Panduan belajar gitar dari nol: chord mayor, minor, dan teknik petikan.</p>
+    </div>
+    <div class="article-card">
+      <h3>Sejarah Musik Rock</h3>
+      <p>Perjalanan musik rock dari Elvis hingga Linkin Park.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="testimoni">
+  <h2>Testimoni Pembaca</h2>
+  <div class="testimonial">
+    <p><strong>Aldi, 21 tahun:</strong> “Website ini keren banget! Semua info tentang musik lengkap dan gampang dipahami.”</p>
+  </div>
+  <div class="testimonial">
+    <p><strong>Sinta, 17 tahun:</strong> “Bantu banget buat belajar kunci gitar dan nyari inspirasi lagu!”</p>
+  </div>
+</section>
+
+<section class="section cta" id="subscribe">
+  <h2>Ingin Update Artikel Terbaru?</h2>
+  <p>Masukkan email kamu di bawah untuk berlangganan!</p>
+  <form>
+    <input type="email" placeholder="Email kamu..." required />
+    <button type="submit">Langganan</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 MusikKu. Semua Hak Dilindungi.</p>
+</footer>
+
+</body>
+</html>
